@@ -33,7 +33,6 @@
   <!-- Main Stylesheet File -->
   <link href="./style.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -46,8 +45,7 @@
 
         <div id="logo" class="pull-left">
           <h1><a href="#intro" class="scrollto">Tourist</a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></img></a> -->
+
         </div>
 
         <nav id="nav-menu-container">
@@ -64,13 +62,57 @@
   <!--==========================
     Intro Section
     ============================-->
-    <section id="intro">
+    <section id="log">
 
-      <div class="intro-text">
-        <h2>Welcome Tourist</h2>
-        <p>We are the tourist guide, happy to guide you around the world...</p>
+      <div class="container-fluid w-50 bg-transparent ">
+        <header class="text-center">
+          <h1 class="text-white">Message Us</h1>  
+        </header>
+        <main class="">
+          <form class="text-center">
+            <div class="form-group row mx-1 p-1 pb-1 mb-3 card bg-transparent text-white">
+              <p class="mb-1 mt-3">Name</p>
+              <input type="text" name="your_name" id="your_name" placeholder="Your Name" class="form-control mb-2 bg-light">
+              <p class="mb-1">Email address</p>
+              <input type="email" name="e_mail" id="e_mail" placeholder="name@example.com" class="form-control mb-2 bg-light">
+
+              <p class="mb-1">Message</p>
+              <textarea name="notes" rows="5" id="notes" class="mb-2" required></textarea>
+              <button type="submit" class="btn btn-primary form-control bg-dark text-light m-auto rounded p-md-3 col-md-5" data-toggle="modal" data-target="#myModal">Send Email</button>
+            </div>
+            
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Message Send</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Thank you.....
+                  </div>
+                  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary bg-light">
+                      <a href="./index.html">Close</a></button>
+
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </form>
+        </main>
+
       </div>
-      
+
   <!--==========================
     Footer
     ============================-->
@@ -86,7 +128,7 @@
           <div class="col-lg-6">
             <!-- <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0"> -->
               <div class="credits footer-links text-lg-right text-center pt-2 pt-lg-0">
-
+               
                 Designed by <a href="#" class="text-primary">Batch281</a>
               </div>
             </nav>
@@ -110,6 +152,7 @@
     <script src="lib/superfish/hoverIntent.js"></script>
     <script src="lib/superfish/superfish.min.js"></script>
     <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
 
 
   </body>
