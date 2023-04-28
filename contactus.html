@@ -33,31 +33,40 @@
   <!-- Main Stylesheet File -->
   <link href="./style.css" rel="stylesheet">
 
+
 </head>
 
 <body>
 
-  <!--==========================
-    Header
-    ============================-->
-    <header id="header">
-      <div class="container">
+  <!-- Navbar Section Start -->
+  <header id="header">
+    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <a class="navbar-brand" href="#">Tourist</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
 
-        <div id="logo" class="pull-left">
-          <h1><a href="#intro" class="scrollto">Tourist</a></h1>
-
-        </div>
-
-        <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li class="menu-active"><a href="./index.html">Home</a></li>
-            <li><a href="./aboutus.html">About Us</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contactus.html">Contact Us</a></li>
-          </ul>
-        </nav><!-- #nav-menu-container -->
-      </div>
-    </header><!-- #header -->
+  <!-- Navbar Section End -->
 
   <!--==========================
     Intro Section
@@ -116,19 +125,20 @@
   <!--==========================
     Footer
     ============================-->
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
+    <footer id="footer" class="bg-tranparent">
+      <div class="container-fluid fixed-bottom bg-tranparent
+      ">
+        <div class="row bg-tranparent">
           <div class="col-lg-6 text-lg-left text-center">
             <div class="copyright">
               &copy; Copyright <strong>Tourist</strong>. All Rights Reserved
             </div>
-            
+
           </div>
           <div class="col-lg-6">
             <!-- <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0"> -->
               <div class="credits footer-links text-lg-right text-center pt-2 pt-lg-0">
-               
+
                 Designed by <a href="#" class="text-primary">Batch281</a>
               </div>
             </nav>
@@ -152,7 +162,6 @@
     <script src="lib/superfish/hoverIntent.js"></script>
     <script src="lib/superfish/superfish.min.js"></script>
     <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-
 
 
   </body>
