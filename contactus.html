@@ -80,13 +80,16 @@
         <main>
           <form class="text-center bg-transparent border border-danger rounded">
             <div class="form-group row mx-1 p-1 pb-1 mb-1 card bg-transparent text-white">
+
               <p class="mb-1 mt-1 w-100">Name</p>
               <input type="text" name="your_name" id="your_name" placeholder="Your Name" class="form-control mb-1 bg-light">
+
               <p class="mb-1 w-100">Email address</p>
               <input type="email" name="e_mail" id="e_mail" placeholder="name@example.com" class="form-control mb-1 bg-light">
 
               <p class="mb-1">Message</p>
-              <textarea name="notes" rows="3" id="notes" class="mb-1" required></textarea>
+              <textarea name="notes" rows="3" id="notes" class="form-control mb-1 bg-light" required></textarea>
+              
               <button type="submit" class="btn btn-primary form-control bg-secondary text-light m-auto rounded p-md-3 col-md-3" data-toggle="modal" data-target="#myModal">Send Email</button>
             </div>
             
