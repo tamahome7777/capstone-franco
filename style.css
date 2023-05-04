@@ -93,17 +93,21 @@ h1, h2, h3, h4, h5, h6 {
   height: 93vh;
   /*background: linear-gradient(45deg,  #0C04FA, #F8062C, #17EE10);*/
   position: relative;
+  /*background: linear-gradient(180deg, rgba(13, 24, 93, .8156862745098039), rgba(0, 0, 238, .8),  rgba(0, 68, 158, .4117647058823529)), url(./img/th.jpg) fixed center center;*/
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.2)), url(./img/th.jpg) fixed center center;
+
   background-size: cover;
-  padding: 100px 0;
+  text-align: center;
+  padding-top: 25px;
   /*height: 80vh;*/
+
 }
 
-#intro .intro-text {
-  padding-top: 360px;
-  text-align: center;
+#intro .intro-text{
+  padding-top: 50px;
+  justify-content: center;
   vertical-align: top;
-}f
+}
 
 @media (max-height: 768px) {
   #intro .intro-text {
@@ -123,13 +127,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro h2 {
-  margin: 30px 0 10px 0;
-  padding: 0 15px;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56px;
-  color: #fff;
+h2 {
+padding-top: 20px;
+
 }
 
 @media (max-width: 768px) {
@@ -139,13 +139,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro p {
+/*#intro p {
   color: #fff;
   margin-bottom: 20px;
   padding: 0 15px;
   font-size: 24px;
 }
-
+*/
 @media (max-width: 768px) {
   #intro p {
     font-size: 18px;
@@ -579,6 +579,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-links a:hover {
   color: #EA1432;
 }
+
+
+/*--------------------------
+contact me
+----------------------------*/
 #log {
   width: 100%;
   height: 93vh;
@@ -586,17 +591,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.2)), url(./img/contactus1.jpg) fixed center center;
   background-size: cover;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
   /*height: 80vh;*/
 }
-#log .intro-text {
-  padding-top: 360px;
-  text-align: center;
-  vertical-align: top;
-}f
 
 @media (max-height: 768px) {
-  #log .intro-text {
+  #log {
     padding-top: 80px;
   }
 }
